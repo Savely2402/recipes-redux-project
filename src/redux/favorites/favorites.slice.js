@@ -9,7 +9,7 @@ export const favoritesSlice = createSlice({
             const isExists = state.some((r) => r.id === recipe.id)
 
             if (isExists) {
-                state.filter((r) => r.id !== recipe.id)
+                return state.filter((r) => r.id !== recipe.id)
             } else {
                 state.push(recipe)
             }
