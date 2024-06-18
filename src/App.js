@@ -1,8 +1,10 @@
+import Header from './components/header/Header'
 import RecipeItem from './components/recipe-item/RecipeItem'
 
 function App() {
     return (
         <div className="App">
+            <Header />
             <RecipeItem
                 recipe={{
                     id: 1,
